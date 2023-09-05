@@ -55,8 +55,6 @@ class Game{
 
         //adiciona as duas sprites na matriz cars
         cars = [car1, car2];
-        coins = new Group();
-        this.addSprites(coins, coinImg, 35,0.25);
     }
 
 
