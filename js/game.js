@@ -8,26 +8,7 @@ class Game{
 
         
     }
-    addSprites(grupo, imagem, quantidade, tamanho, posicoes=[]){
-        for(var i = 0; i < quantidade; i++){
-            //checa se elementos na matriz
-            if(posicoes.length>0){
-                //define a posição com base na matriz
-                var x = posicoes[i].x;
-                var y = posicoes[i].y;
-            }else{
-                //define a posição de modo aleatório
-                var x = random(width*0.33, width*0.66);
-
-                var y = random(-height*4.5, height-100);
-            }
-
-            var sprite = createSprite(x,y);
-            sprite.addImage(imagem);
-            sprite.scale = tamanho;
-            grupo.add(sprite);
-        }
-    }
+    
     //lidar com elementos
     handleElements(){
         //definir a posição
